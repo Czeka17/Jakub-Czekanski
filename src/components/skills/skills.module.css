@@ -1,0 +1,53 @@
+.skillsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 5em 0;
+  }
+  .introduction{
+    text-align: center;
+    font-size: 3rem;
+  }
+  .skills{
+    position: relative;
+  }
+  .skills h2 {
+    font-size: 20rem;
+    letter-spacing: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: perspective(100px) rotateX(2deg);
+  }
+  
+  .skillsCarousel {
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background: #27374D;
+    top: 45%;
+    left: 0;
+  }
+  
+  .skillsCarousel svg {
+    fill: #526D82;
+    font-size: 3rem;
+    position: relative;
+    z-index: 2;
+  }
+  .skill{
+    color: #526D82;
+    text-align: center;
+  }
+  .skill p{
+    margin: 0;
+    padding: 0;
+  }
+  

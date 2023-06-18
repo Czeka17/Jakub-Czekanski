@@ -1,0 +1,30 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: #526D82;
+    z-index: 99;
+}
+
+.logo {
+    margin:0 auto;
+}
+
+.navigationList {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navigationList li {
+    padding: 0 2em;
+    margin: 0 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+}

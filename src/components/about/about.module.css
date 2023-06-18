@@ -1,0 +1,45 @@
+.aboutSection{
+    padding: 3em 0;
+}
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .introduction{
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .about {
+    padding: 3em 0;
+    width: 50%;
+  }
+  
+  .aboutBackground {
+    position: relative;
+  }
+  
+  .aboutBackground h2 {
+    font-size: 20rem;
+    letter-spacing: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.2,1.4) perspective(100px) rotateX(2deg);
+  }
+  
+  .aboutBackground p {
+    background: #27374D;
+    border-radius: 2px;
+    padding: 1em;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    transform: translate(-50%,-50%);
+  }
+  
