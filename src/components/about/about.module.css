@@ -1,6 +1,4 @@
-.aboutSection{
-    padding: 3em 0;
-}
+
 .aboutContainer {
     display: flex;
     justify-content: center;
@@ -11,7 +9,6 @@
   }
   
   .about {
-    padding: 3em 0;
     width: 50%;
   }
   
@@ -20,17 +17,17 @@
   }
   
   .aboutBackground h2 {
-    font-size: 20rem;
+    font-size: 25vw;
     letter-spacing: 20px;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding-top: 0.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     transform: scale(1.2,1.4) perspective(100px) rotateX(2deg);
   }
   
   .aboutBackground p {
-    background: #27374D;
+    background: #DDDDDD;
     border-radius: 2px;
     padding: 1em;
     margin: 0;

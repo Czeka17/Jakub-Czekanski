@@ -1,4 +1,7 @@
-import {useRef,useEffect} from 'react'
+
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import {
   SiTypescript,
   SiJavascript,
@@ -20,13 +23,24 @@ import {
 import classes from './skills.module.css';
 
 function Skills() {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
+
   return (
     <section className={classes.skillsContainer}>
-        <p className={classes.introduction}>LETS TALK ABOUT</p>
         <div className={classes.skills}>
         <h2 className={classes.heading}>SKILLS</h2>
-      <div className={classes.skillsCarousel} >
-            <div className={classes.skill}><SiTypescript /><p>Typescript</p></div>
+        <div className={classes.carouselWrapper}>
+      <Slider {...settings}>
+            <div className={classes.skill} ><SiTypescript /><p>Typescript</p></div>
             <div className={classes.skill}><SiJavascript /><p>Javascript</p></div>
             <div className={classes.skill}><SiCss3 /><p>CSS3</p></div>
             <div className={classes.skill}><SiReact/><p>Reactjs</p></div>
@@ -41,6 +55,7 @@ function Skills() {
             <div className={classes.skill}><SiTestinglibrary /><p>Tests</p></div>
             <div className={classes.skill}><SiMongodb/><p>Mongodb</p></div>
             <div className={classes.skill}><SiFirebase  /><p>Firebase</p></div>
+      </Slider>
       </div>
       </div>
     </section>

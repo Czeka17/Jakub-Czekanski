@@ -3,17 +3,22 @@ import classes from './contact.module.css'
 function Contact(){
 
     return<section>
-        <p className={classes.introduction}>LETS TALK ABOUT</p>
         <div className={classes.contactContainer}>
             <h2>CONTACT</h2>
             <form className={classes.contactForm}>
-                <h3>GET IN TOUCH WITH ME</h3>
+            <div className={classes.contactFormName}>
             <label htmlFor='name' >Name</label>
             <input type='text' name='name' />
+            </div>
+            <div className={classes.contactFormEmail}>
             <label htmlFor='email'>E-mail</label>
             <input type='text' name='email' />
+            </div>
+            <div className={classes.contactFormMessage}>
             <label>Message</label>
-            <textarea></textarea>
+            <textarea rows={5}></textarea>
+            </div>
+            <button type='submit' className={classes.submitButton}>Submit</button>
             </form>
         </div>
     </section>

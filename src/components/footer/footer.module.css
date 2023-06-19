@@ -1,0 +1,29 @@
+.footer{
+    width: 100%;
+    padding: 1em 0;
+    background: #AAAAAA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.socials{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 1em;
+}
+.socials a{
+    text-decoration: none;
+    color: #000000;
+}
+.socials svg{
+    font-size: 2rem;
+    fill: #000000;
+}
+.footer hr{
+    width: 50%;
+}
