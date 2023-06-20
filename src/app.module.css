@@ -1,4 +1,13 @@
 .app{
     font-family: Poppins;
     font-weight: bold;
+    position: relative;
 }
+.content {
+    filter: invert(100%);
+  }
+  .highlight {
+    color: white;
+    background-color: black;
+  }
+  

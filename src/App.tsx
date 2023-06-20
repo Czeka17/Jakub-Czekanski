@@ -1,5 +1,5 @@
-import classes from './app.module.css'
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import classes from './app.module.css';
 import Header from './components/header/header';
 import Skills from './components/skills/skills';
 import About from './components/about/about';
@@ -8,28 +8,26 @@ import Projects from './components/projects/projects';
 import Contact from './components/contact/contact';
 import MainNavigation from './components/layout/main-navigation';
 import Footer from './components/footer/footer';
+import CursorCircle from './components/UI/circle-cursor';
 
-interface Slide{
-  title:string;
-  description: string;
-}
-function App() {
+const App: React.FC = () => {
 
-    return (
-      <>
-      <MainNavigation/>
+  return (
+    <>
+      <MainNavigation />
       <main className={classes.app}>
         <AppWrapper>
-      <Header/>
-      <About />
-      <Skills/>
-      <Projects/>
-      <Contact/>
-      </AppWrapper>
+          <Header />
+          <CursorCircle />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </AppWrapper>
       </main>
-      <Footer/>
-      </>
-    );
-  };
+      <Footer />
+    </>
+  );
+};
 
 export default App;

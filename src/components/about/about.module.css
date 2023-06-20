@@ -40,3 +40,9 @@
     transform: translate(-50%,-50%);
   }
   
+
+  @media(min-width:1024px){
+    .aboutBackground h2 {
+      font-size: 22rem;
+    }
+  }

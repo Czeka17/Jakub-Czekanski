@@ -1,6 +1,6 @@
 .contactContainer{
     position: relative;
-    padding: 16em 0;
+    padding: 6em 0;
 }
 .contactContainer h2{
     position: absolute;
@@ -14,9 +14,6 @@
     z-index: 1;
 }
 .contactForm{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.9fr 1fr;
     padding: 3em;
     background: #AAAAAA;
 }
@@ -79,4 +76,22 @@
 .submitButton:hover{
     background-color: #DDDDDD;
     border: 2px solid #AAAAAA;
+}
+
+@media (min-width:1024px){
+    .contactContainer h2{
+        font-size: 15rem;
+    }
+
+}
+
+@media(min-width: 726px){
+    .contactForm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.9fr 1fr;
+    }
+    .contactContainer{
+        padding: 16em 0;
+    }
 }

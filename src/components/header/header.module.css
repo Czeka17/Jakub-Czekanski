@@ -1,11 +1,12 @@
 .header {
   position: relative;
   width: 100%;
-  height: 100vh;
+  padding: 20em 0;
   font-size: 4vw;
   letter-spacing: 3px;
   font-family: Montserrat;
   line-height: 120px;
+  margin: 5em 0;
   }
   .headerText{
     position: absolute;
@@ -26,6 +27,7 @@
     position: absolute;
     bottom:0;
     left: -5%;
+    z-index: 1001;
   }
   .headerImage img {
     width: 40%;
@@ -51,5 +53,13 @@
     100%{
       transform: translateY(0%);
       opacity: 1;
+    }
+  }
+
+  @media(min-width:1024px){
+    .header{
+      padding: 6em 0;
+      margin: 0;
+      font-size: 4rem;
     }
   }
