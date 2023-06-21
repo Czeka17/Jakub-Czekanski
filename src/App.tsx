@@ -9,12 +9,19 @@ import Contact from './components/contact/contact';
 import MainNavigation from './components/layout/main-navigation';
 import Footer from './components/footer/footer';
 import CursorCircle from './components/UI/circle-cursor';
-
+import Hamburger from 'hamburger-react'
 const App: React.FC = () => {
+  const [isOpen, setOpen] = useState(false)
 
+  function HideNavHandler(){
+    setOpen(false)
+  }
   return (
     <>
-      <MainNavigation />
+      <MainNavigation isOpen={isOpen} HideNavHandler={HideNavHandler} />
+      <div className={classes.hamburger}>
+        <Hamburger toggled={isOpen} toggle={setOpen} />
+      </div>
       <main className={classes.app}>
         <AppWrapper>
           <Header />

@@ -2,7 +2,7 @@ import classes from './contact.module.css'
 
 function Contact(){
 
-    return<section>
+    return<section id='contact'>
         <div className={classes.contactContainer}>
             <h2>CONTACT</h2>
             <form className={classes.contactForm}>

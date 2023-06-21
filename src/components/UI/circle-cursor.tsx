@@ -16,22 +16,13 @@ const CircleCursor: React.FC = () => {
     };
   }, []);
 
-  const getRandomOffset = () => {
-    const circleRadius = 100;
-    const angle = Math.random() * 2 * Math.PI;
-    const distance = Math.random() * circleRadius;
-    const offsetX = Math.cos(angle) * distance;
-    const offsetY = Math.sin(angle) * distance;
-    return { x: offsetX, y: offsetY };
-  };
-
   return (
     <>
       <div
         className={styles.circle}
         style={{
-          left: cursorPosition.x - 100,
-          top: cursorPosition.y - 100,
+          left: cursorPosition.x - 150,
+          top: cursorPosition.y - 150,
         }}
       >
       </div>

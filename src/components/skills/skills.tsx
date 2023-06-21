@@ -35,7 +35,7 @@ function Skills() {
   };
 
   return (
-    <section className={classes.skillsContainer}>
+    <section className={classes.skillsContainer} id='skills'>
         <div className={classes.skills}>
         <h2 className={classes.heading}>SKILLS</h2>
         <div className={classes.carouselWrapper}>

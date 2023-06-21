@@ -17,13 +17,14 @@
   }
   
   .aboutBackground h2 {
-    font-size: 25vw;
+    font-size: 15vw;
     letter-spacing: 20px;
     text-align: center;
     margin: 0;
     padding-top: 0.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     transform: scale(1.2,1.4) perspective(100px) rotateX(2deg);
+    cursor:default
   }
   
   .aboutBackground p {

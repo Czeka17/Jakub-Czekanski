@@ -13,8 +13,9 @@
     position: relative;
   }
   .skills h2 {
-    font-size: 22vw;
+    font-size: 20vw;
     letter-spacing: 20px;
+    max-width: 100%;
     text-align: center;
     overflow: hidden;
     padding: 0;
@@ -22,6 +23,7 @@
     z-index: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     transform: perspective(100px) rotateX(2deg) scaleY(2);
+    cursor: default;
   }
   
   .carouselWrapper {

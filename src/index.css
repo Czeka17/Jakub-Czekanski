@@ -12,8 +12,19 @@ body {
   background-color: #DDDDDD;
   color: #000000;
 }
+body,html{
+  scroll-behavior: smooth;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body::-webkit-scrollbar{
+  opacity: 0;
+  width: 10px;
+}
+body:hover::-webkit-scrollbar-thumb{
+  background:#AAAAAA;
 }

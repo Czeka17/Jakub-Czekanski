@@ -1,14 +1,15 @@
 .header {
   position: relative;
   width: 100%;
-  padding: 20em 0;
+  padding: 15em 0;
   font-size: 4vw;
   letter-spacing: 3px;
   font-family: Montserrat;
-  line-height: 120px;
-  margin: 5em 0;
+  line-height: 60px;
+  margin: 3em 0 10em 0;
   }
   .headerText{
+    cursor: default;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +33,7 @@
   .headerImage img {
     width: 40%;
     height: 40%;
-    clip-path: circle(40%);
+    animation: ImageBorder 10s infinite;
   }
   
   @keyframes HeaderTextComesIn{
@@ -55,11 +56,33 @@
       opacity: 1;
     }
   }
+  @keyframes ImageBorder{
+    100%,0%{
+      border-radius: 70% 56% 30% 70%/60% 75% 85% 80%;
+    }
+    25%{
+      border-radius: 63% 50% 80% 95%/ 85% 45% 65% 90%;
+    }
+    50%{
+      border-radius: 73% 80% 50% 85%/ 65% 75% 75% 50%;
+    }
+    75%{
+      border-radius: 79% 52% 73% 64%/ 92% 74% 71% 80%;
+    }
+  }
 
   @media(min-width:1024px){
     .header{
       padding: 6em 0;
       margin: 0;
       font-size: 4rem;
+      line-height: 120px;
+    }
+  }
+  @media(min-width:768px){
+    .header{
+      padding: 8em 0;
+      margin: 0;
+      font-size: 3rem;
     }
   }

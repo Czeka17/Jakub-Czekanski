@@ -5,7 +5,7 @@ import meImage from "../../toja3.jpg";
 const Header = () => {
 
   return (
-    <header className={classes.header}>
+    <header className={classes.header} id='home'>
       <div className={classes.headerText}>
         <h2>ASPIRING FRONT END DEVELOPER</h2>
       </div>

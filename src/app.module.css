@@ -3,11 +3,17 @@
     font-weight: bold;
     position: relative;
 }
-.content {
-    filter: invert(100%);
+.hamburger{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  z-index: 10000;
+  color: white;
+}
+
+@media(min-width:1024px){
+  .hamburger{
+    display: none;
   }
-  .highlight {
-    color: white;
-    background-color: black;
-  }
-  
+}

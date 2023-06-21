@@ -13,6 +13,10 @@
 .logo {
     margin:0 auto;
 }
+.logo a{
+    text-decoration: none;
+    color: #000000;
+}
 
 .navigationList {
     width: 60%;
@@ -27,4 +31,38 @@
     margin: 0 1em;
     cursor: pointer;
     text-transform: uppercase;
+}
+.navigationList li a{
+    text-decoration: none;
+    color: #000000;
+}
+@media (max-width: 1024px){
+.navigation{
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-100%);
+    transition: 0.3s ease-in-out;
+}
+.navigationList{
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    position: absolute;
+    top: 5%;
+}
+
+.navigationList li {
+    padding: 1em 0;
+    margin: 2em 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.openNav{
+    transform: translate(0);
+}
 }

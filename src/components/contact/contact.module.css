@@ -1,10 +1,10 @@
 .contactContainer{
     position: relative;
-    padding: 6em 0;
+    padding: 3em 0;
 }
 .contactContainer h2{
     position: absolute;
-    top: 0;
+    top: -5%;
     left: 50%;
     transform: translate(-50%);
     font-size: 15vw;
@@ -80,7 +80,7 @@
 
 @media (min-width:1024px){
     .contactContainer h2{
-        font-size: 15rem;
+        font-size: 13rem;
     }
 
 }
