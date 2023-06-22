@@ -1,11 +1,15 @@
 
+.projectsSection{
+  padding: 3em 0;
+}
   .projectsContainer{
     position: relative;
     padding: 6em 0;
+    margin-top: 5em;
   }
   .projectsContainer h2{
     position: absolute;
-    top: 0;
+    top: -1em;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -36,16 +40,31 @@
     margin: 1em;
     border-radius: 2px;
     background-color:#DDDDDD;
+    z-index: 1001;
   }
-
   .project img{
     padding-top: 2em;
     border-radius: 2px;
     width: 80%;
     height: 50%;
+    object-fit: contain;
   }
   .project p{
-    padding: 1em;
+    padding: 0.5em;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-spacing: 1px;
+  }
+  .projectCredentials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .projectCredentials p{
+    margin: 0;
+    padding: 0;
   }
   .technologiesContainer{
     text-align: center;
@@ -74,10 +93,11 @@
   }
   .buttonRefs button{
     margin: 1em 0;
-    padding: 1em 2em;
+    padding: 1em;
     border: 2px solid #AAAAAA;
     background: transparent;
     border-radius: 2px;
+    letter-spacing: 1px;
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -88,9 +108,20 @@
   }
 
   @media(min-width:1024px){
+    .projectsSection{
+      padding: 6em 0;
+    }
+
+    .buttonRefs button{
+      padding: 1em 2em;
+    }
     .projectsContainer h2{
-      font-size: 15rem;
+      font-size: 12rem;
       top: -10%;
+    }
+    .project p{
+      padding: 1em;
+      font-size: 1rem;
     }
     .technologies{
       font-size: 2rem;
@@ -98,6 +129,6 @@
     .projects{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1em;
+      gap: 2em;
     }
   }

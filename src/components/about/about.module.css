@@ -2,12 +2,9 @@
 .aboutContainer {
     display: flex;
     justify-content: center;
+    padding: 14em 0;
+    margin: 2em 0;
   }
-  .introduction{
-    text-align: center;
-    font-size: 3rem;
-  }
-  
   .about {
     width: 50%;
   }
@@ -17,13 +14,14 @@
   }
   
   .aboutBackground h2 {
+    display: none;
     font-size: 15vw;
     letter-spacing: 20px;
     text-align: center;
     margin: 0;
     padding-top: 0.2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    transform: scale(1.2,1.4) perspective(100px) rotateX(2deg);
+    transform: scale(1.2,1.4);
     cursor:default
   }
   
@@ -33,17 +31,20 @@
     padding: 1em;
     margin: 0;
     font-size: 1.125rem;
-    line-height: 1.75rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150%;
+    width: 200%;
     transform: translate(-50%,-50%);
   }
   
 
   @media(min-width:1024px){
     .aboutBackground h2 {
+      display: block;
       font-size: 22rem;
     }
   }

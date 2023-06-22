@@ -1,10 +1,13 @@
+.contactSection{
+    padding: 10em 0 3em;
+}
 .contactContainer{
     position: relative;
     padding: 3em 0;
 }
 .contactContainer h2{
     position: absolute;
-    top: -5%;
+    top: -1em;
     left: 50%;
     transform: translate(-50%);
     font-size: 15vw;
@@ -12,56 +15,64 @@
     padding: 0;
     margin:0;
     z-index: 1;
+    cursor: default;
 }
 .contactForm{
-    padding: 3em;
+    padding: 1em;
     background: #AAAAAA;
+    color: #000000;
+}
+.contactFormName, .contactFormEmail,.contactFormMessage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0;
 }
 .contactFormName{
-    display: flex;
-    flex-direction: column;
     grid-row: 1/1;
     grid-column: 1/1;
-    width: 100%;
-}
-
-.contactFormName input{
-    padding: 0.5em;
-    margin: 0 1em;
-    border-radius: 2px;
-    border: 2px solid #DDDDDD;
-    background-color: #AAAAAA;
-    color:#DDE6ED ;
 }
 .contactFormEmail{
-    display: flex;
-    flex-direction: column;
     grid-row: 1/1;
     grid-column: 2/2;
 }
-.contactFormEmail input{
-    margin: 0 1em;
-    padding: 0.5em;
+
+.contactFormName input, .contactFormEmail input,.contactFormMessage textarea{
+    padding: 1em;
+    margin: 0;
     border-radius: 2px;
     border: 2px solid #DDDDDD;
     background-color: #AAAAAA;
-    color:#DDE6ED ;
 }
+.contactFormName label, .contactFormEmail label{
+    position: absolute;
+    margin: 1em;
+    transition: all 0.3s;
+    padding:0 1em;
+}
+.contactFormName:focus-within label,.contactFormName.active label, .contactFormEmail:focus-within label,.contactFormEmail.active label,.contactFormMessage:focus-within label, .contactFormMessage.active label {
+    transform: translateY(-1.5em);
+    font-size: 1rem;
+    background: #AAAAAA;
+}
+
 .contactFormMessage{
-    display: flex;
-    flex-direction: column;
     grid-column: 1/3;
     grid-row: 2/2;
 }
 .contactFormMessage textarea{
     resize: none;
-    margin: 0 1em;
-    padding: 0.5em;
-    border-radius: 2px;
-    border: 2px solid #DDDDDD;
-    background-color: #AAAAAA;
+    padding: 1em;
 }
-
+.contactFormMessage label{
+    position: absolute;
+    top: 0;
+    margin: 0 1em;
+    padding: 0.5em 0.5em 0 0.5em;
+    transition: all 0.3s;
+}
 .submitButton{
     grid-row: 3/3;
     grid-column: 2/2;
@@ -72,6 +83,7 @@
     background-color: #AAAAAA;
     cursor: pointer;
     transition: all 0.3s;
+    font-weight: bold;
 }
 .submitButton:hover{
     background-color: #DDDDDD;
@@ -81,6 +93,7 @@
 @media (min-width:1024px){
     .contactContainer h2{
         font-size: 13rem;
+        top: -10%;
     }
 
 }
@@ -88,10 +101,16 @@
 @media(min-width: 726px){
     .contactForm{
         display: grid;
+        padding: 3em;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0.9fr 1fr;
     }
     .contactContainer{
-        padding: 16em 0;
+        padding: 10em 0;
+    }
+    .contactFormName input, .contactFormEmail input,.contactFormMessage textarea{
+        margin: 0 1em;
     }
 }
+
+
