@@ -24,7 +24,7 @@ const CircleCursor: React.FC = () => {
           left: cursorPosition.x - 150,
           top: cursorPosition.y - 150,
         }}
-      >
+      data-testid="circle-cursor">
       </div>
       {/* Rest of your application content */}
     </>

@@ -10,6 +10,7 @@ function Contact(){
     const [showModal,setShowModal] = useState(false)
     const [response,setResponse] = useState('')
     const [responseParagraph, setResponseParagraph] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
 
     function hideModalHandler(){
       setShowModal(false)
@@ -26,22 +27,26 @@ function Contact(){
 
     const sendEmail = (event:React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      setIsLoading(true)
       if(!name || name.trim() === ''){
         setResponse('Error!')
         setResponseParagraph('Please enter your name.')
         setShowModal(true)
+        setIsLoading(false)
         return
       }
       if(!email || email.trim() === '' || !email.includes('@')){
         setResponse('Error!')
         setResponseParagraph('Please enter valid E-mail.')
         setShowModal(true)
+        setIsLoading(false)
         return
       }
       if(!message || message.trim() === ''){
         setResponse('Error!')
         setResponseParagraph('Please enter message.')
         setShowModal(true)
+        setIsLoading(false)
         return
       }
       emailjs.init('vRp5IMurts6MdqDZE');
@@ -61,12 +66,14 @@ function Contact(){
           setName('');
           setEmail('');
           setMessage('');
+          setIsLoading(false)
         })
         .catch((error) => {
           setResponse('Error!')
           setResponseParagraph('Unexpected error happened!')
           setShowModal(true)
           console.error('Error sending email:', error);
+          setIsLoading(false)
         });
     };
     return<section id='contact' className={classes.contactSection}>
@@ -88,7 +95,7 @@ function Contact(){
               onChange={handleMessageChange} ></textarea>
             <label htmlFor='message'>Message</label>
             </div>
-            <button type='submit' className={classes.submitButton}>Submit</button>
+            <button type='submit' className={classes.submitButton}disabled={isLoading}>{isLoading ? 'Loading...' : 'Submit'}</button>
             </form>
         </div>
         {showModal && <ContactModal hideModalHandler={hideModalHandler} response={response} responseParagraph={responseParagraph} />}

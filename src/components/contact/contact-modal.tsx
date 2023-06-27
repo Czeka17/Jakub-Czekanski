@@ -6,7 +6,7 @@ interface ContactModalProps{
     responseParagraph: string
 }
 function ContactModal({hideModalHandler,response,responseParagraph}: ContactModalProps){
-    return <div className={classes.modalContainer}>
+    return <div className={classes.modalContainer} data-testid="contact-modal">
         <div className={classes.modal}>
             <h3>{response}</h3>
             <p>{responseParagraph}</p>

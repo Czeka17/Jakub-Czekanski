@@ -1,4 +1,3 @@
-
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -38,7 +37,7 @@ function Skills() {
     <section className={classes.skillsContainer} id='skills'>
         <div className={classes.skills}>
         <h2 className={classes.heading}>SKILLS</h2>
-        <div className={classes.carouselWrapper}>
+        <div className={classes.carouselWrapper} data-testid="slider">
       <Slider {...settings}>
             <div className={classes.skill} ><SiTypescript /><p>Typescript</p></div>
             <div className={classes.skill}><SiJavascript /><p>Javascript</p></div>

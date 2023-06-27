@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import classes from './app.module.css';
 import Header from './components/header/header';
 import Skills from './components/skills/skills';
@@ -20,7 +20,7 @@ const App: React.FC = () => {
     <>
       <MainNavigation isOpen={isOpen} HideNavHandler={HideNavHandler} />
       <div className={classes.hamburger}>
-        <Hamburger toggled={isOpen} toggle={setOpen} />
+        <Hamburger toggled={isOpen} toggle={setOpen} data-testid="hamburger" />
       </div>
       <main className={classes.app}>
         <AppWrapper>
@@ -32,6 +32,7 @@ const App: React.FC = () => {
           <Contact />
         </AppWrapper>
       </main>
+      <div data-testid="isOpen-state">{String(isOpen)}</div>
       <Footer />
     </>
   );
