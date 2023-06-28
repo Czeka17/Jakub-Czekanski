@@ -32,7 +32,7 @@ const App: React.FC = () => {
           <Contact />
         </AppWrapper>
       </main>
-      <div data-testid="isOpen-state">{String(isOpen)}</div>
+      <div className={classes.stateInfo} data-testid="isOpen-state">{String(isOpen)}</div>
       <Footer />
     </>
   );
