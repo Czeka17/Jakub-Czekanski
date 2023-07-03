@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
+    cursor: pointer;
 }
 .logo a svg{
     font-size: 1.3rem;
@@ -35,13 +36,21 @@
 
 .navigationList li {
     padding: 0 2em;
-    margin: 0 1em;
-    cursor: pointer;
     text-transform: uppercase;
 }
 .navigationList li a{
     text-decoration: none;
-    color: #000000;
+    padding: 1em 0.5em;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.navigationList li a:hover{
+    background: black;
+    color: #AAAAAA;
+}
+.active{
+    background: black;
+    color: #AAAAAA;
 }
 @media (max-width: 1024px){
 .navigation{

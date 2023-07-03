@@ -13,6 +13,7 @@
   z-index: 10000;
   color: white;
 }
+
 .stateInfo{display: none;}
 @media(min-width:1024px){
   .hamburger{

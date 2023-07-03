@@ -29,11 +29,25 @@
     bottom:0;
     left: 0;
     z-index: 1001;
+    transform: scale(0);
+    animation: ImageComesIn 1s 1s forwards;
   }
   .headerImage img {
     width: 40%;
     height: 40%;
     animation: ImageBorder 10s infinite;
+  }
+  @keyframes ImageComesIn {
+    0%{
+      transform: scale(0);
+    }
+    75%{
+      transform: scale(1.1);
+    }
+    100%{
+      transform: scale(1);
+    }
+    
   }
   
   @keyframes HeaderTextComesIn{

@@ -1,8 +1,8 @@
 import classes from './projects.module.css'
-import mooviz from '../../mooviz.jpg'
-import todoList from '../../todolist.jpg'
-import portfolio from '../../portfolio-page.png'
-import postIT from '../../postIT.png'
+import mooviz from '../../mooviz.webp'
+import todoList from '../../todolist.webp'
+import portfolio from '../../portfolio-page.webp'
+import postIT from '../../postIT.webp'
 import { SiCss3, SiMongodb, SiNextdotjs, SiReact, SiRed, SiRedux, SiTailwindcss, SiTypescript } from 'react-icons/si'
 function Projects(){
     return <section id='projects' className={classes.projectsSection}>

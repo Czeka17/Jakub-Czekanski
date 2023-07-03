@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from "./header.module.css";
-import meImage from "../../toja3.jpg";
+import meImage from "../../toja3-_1_.webp";
 
 const Header = () => {
 

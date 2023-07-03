@@ -19,11 +19,17 @@
 .socials a{
     text-decoration: none;
     color: #000000;
+    transition: 0.3s;
 }
 .socials svg{
     font-size: 2rem;
     fill: #000000;
+    transition: 0.3s;
 }
 .footer hr{
     width: 50%;
+}
+.socials a:hover, .socials svg:hover{
+    fill: white;
+    color: white;
 }
