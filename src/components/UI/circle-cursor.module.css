@@ -24,7 +24,7 @@
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
-  z-index: 1000;
+  z-index: 1;
   mix-blend-mode:difference;
   animation-name: blob;
   animation-duration: 5s;

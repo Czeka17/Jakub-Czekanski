@@ -15,6 +15,7 @@ const CircleCursor: React.FC = () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+  
 
   return (
     <>
@@ -26,7 +27,6 @@ const CircleCursor: React.FC = () => {
         }}
       data-testid="circle-cursor">
       </div>
-      {/* Rest of your application content */}
     </>
   );
 };

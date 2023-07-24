@@ -42,9 +42,7 @@ const App: React.FC = () => {
      data-aos-anchor-placement="top-center">
           <Skills />
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000">
             <Projects />
-          </div>
           <Contact />
         </AppWrapper>
       </main>
