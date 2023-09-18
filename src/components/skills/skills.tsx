@@ -16,7 +16,8 @@ import {
   SiTailwindcss,
   SiTestinglibrary,
   SiMongodb,
-  SiFirebase
+  SiFirebase,
+  SiExpo
 } from 'react-icons/si';
 
 import classes from './skills.module.css';
@@ -44,6 +45,8 @@ function Skills() {
             <div className={classes.skill}><SiCss3 /><p>CSS3</p></div>
             <div className={classes.skill}><SiReact/><p>Reactjs</p></div>
             <div className={classes.skill}><SiRedux /><p>Redux</p></div>
+            <div className={classes.skill}><SiReact/><p>React Native</p></div>
+            <div className={classes.skill}><SiExpo/><p>Expo</p></div>
             <div className={classes.skill}><SiPostman /><p>Postman</p></div>
             <div className={classes.skill}><SiNextdotjs /><p>Nextjs</p></div>
             <div className={classes.skill}><SiHtml5 /><p>HTML5</p></div>
